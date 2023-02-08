@@ -1,0 +1,507 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald&family=Teko:wght@300;400;500&display=swap');
+
+:root {
+    --red: #EE5C14;
+    --lightgray: #B2BEBF;
+    --gray: #889C9B;
+    --boldgray: #486966;
+    --boldergray: #3B3936;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    z-index: 10;
+    border: 1px solid var(--lightgray);
+}
+
+header > img {
+    max-height: 80px;
+    position: relative;
+    float: right;
+    right: 80%;
+}
+
+header > h1 {
+    font-family: 'Abril Fatface', cursive; 
+    font-weight: normal;  
+    font-size: 2.8em;
+    position: relative;  
+    left: 21%;
+    top: 10px;
+}
+
+nav {
+    width: 600px;
+    position: fixed;
+    left: 50%;
+    top: 20px;
+    z-index: 10;
+}
+
+nav > a {
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1em;
+    color: black;
+    margin: 0px 13px;
+}
+
+nav > a:hover {
+    color: var(--boldgray);
+    transition-duration: 0.5s;
+}
+
+img#perfil {
+    height: 28px;
+    width: 28px;
+    position: relative;
+    top: 8px;
+}
+
+#img-main {
+    height: 870px;
+    width: 100%;
+    padding-top: 60px;
+}
+
+section img {
+    width: 100%;
+    height: 100%;
+}
+
+#text-img-tit {
+    position: absolute;
+    top: 240px;
+    left: 20%;
+    color: white;
+    font-family: 'Oswald', sans-serif;;
+    font-size: 5em;
+    text-shadow: 4px 5px 3px rgba(0, 0, 0, 0.425);
+}
+
+#text-img-p {
+    position: absolute;
+    top: 380px;
+    left: 20%;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    width: 50%;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
+}
+
+#b-destinos {
+    position: absolute;
+    top: 620px;
+    left: 20%;
+    width: 240px;
+    height: 50px;
+    border-radius: 50px; 
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.432);
+    border: 2px solid var(--red);
+}
+
+#b-destinos > p {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 5px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
+}
+
+#b-destinos:hover {
+    background-color: transparent;
+    transition-duration: 0.5s;
+}
+
+#rating {
+    height: 200px;
+}
+
+#rating > h2 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.897);
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    padding-top: 30px;
+}
+
+#rating  div {
+    width: 280px;
+    height: 50px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: var(--boldergray);
+    border-radius: 50px;
+    border: 2px solid var(--boldergray);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.432);
+}
+
+#rating div > p {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 1.8em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
+    width: 280px;
+    height: 50px;
+}
+
+#rating div:hover {
+    background-color: transparent;
+    transition-duration: 0.5s;
+}
+
+#rating div > p:hover {
+    color: var(--boldergray);
+    font-weight: bold;
+    box-shadow: none;
+    transition-duration: 0.5s;
+}
+
+#princip-torres {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background-image: url('images/city-background.jpg');
+}
+
+#princip-torres > h2 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 60px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-weight: normal;
+    font-size: 1.8em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
+    background-image: linear-gradient(to right, transparent, var(--boldgray), transparent);
+}
+
+#main-places {
+    width: 100%;
+    text-align: center;
+}
+
+#main-places div {
+    height: 250px;
+    width: 250px;
+    margin: 0px 30px;
+    border: 1px solid var(--lightgray);
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    margin-top: 10%;
+    
+}
+
+#main-places p {
+    font-family: 'Teko', sans-serif;
+    color: white;
+    font-weight: normal;
+    padding-top: 30px;
+    font-size: 2em;
+    width: 250px;
+    height: 250px;
+    opacity: 0;
+}
+
+#big-ben {
+    background-image: url('images/big-ben.jpg');
+}
+
+#brugues {
+    background-image: url('images/camp-brugues.jpg');
+}
+
+#skytree {
+    background-image: url('images/skytree-main.jpg');
+}
+
+#pisa {
+    background-image: url('images/pisa-tower.jpg');
+}
+
+#minar {
+    background-image: url('images/qutb-minar.jpg');
+}
+
+#main-places div:hover {
+    background-image: none;
+    background-color: black;
+}
+
+#main-places p:hover {
+    opacity: 100%;
+    transition-duration: 0.8s;
+}
+
+#b-ver-todas {
+    float: right;
+    margin: 50px 30px auto auto;
+    height: 30px;
+    width: 130px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.432);
+    border: 2px solid var(--red);
+}
+
+#b-ver-todas > p {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1em;
+    width: 130px;
+    height: 30px;
+}
+
+#b-ver-todas:hover {
+    background-color: transparent;
+    transition-duration: 0.5s;
+}
+
+#b-ver-todas > p:hover {
+    color: var(--red);
+    transition-duration: 0.5s;
+}
+
+#loja {
+    height: 500px;
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+}
+
+#loja h2 {
+    width: 100%;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.fotos-loja {
+    width: 300px;
+    height: 350px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.fotos-loja  div {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    border: 1px solid var(--lightgray);
+}
+
+.fotos-loja h3 {
+    font-size: 1.6em;
+    font-family: 'Teko', sans-serif;
+    font-weight: 100;
+    color: black;
+    text-decoration: none;
+    padding-top: 8px;
+}
+
+#f-roupas {
+    background-image: url('images/loja-tokyoskytree.jpg');
+    transition-duration: 0.3s;
+}
+
+#f-roupas:hover {
+    background-image: url('images/loja-moletom-eiffel.jpg');
+    transition-duration: 0.3s;
+}
+
+#f-chaveiros {
+    background-image: url('images/loja-chaveiro-sla.jpg');
+    transition-duration: 0.3s;
+}
+
+#f-chaveiros:hover {
+    background-image: url('images/loja-eiffel-chaveiro.jpg');
+    transition-duration: 0.3s;
+}
+
+#f-adesivos {
+    background-image: url('images/loja-eiffel-adesivo.jpg');
+    transition-duration: 0.3s;
+}
+
+#f-adesivos:hover {
+    background-image: url('images/loja-eiffel-adesivo2.jpg');
+    transition-duration: 0.3s;
+}
+
+#f-bebidas {
+    background-image: url('images/loja-bebida1.jpg');
+    transition-duration: 0.3s;
+}
+
+#f-bebidas:hover {
+    background-image: url('images/loja-bebida2.jpg');
+}
+
+#b-loja {
+    width: 220px;
+    height: 40px;
+    border-radius: 50px;
+    margin: 40px auto auto auto;
+    border: 2px solid var(--red);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.432);
+}   
+
+#b-loja > p {
+    font-size: 1.1em;
+    font-weight: normal;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    padding-top: 5px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
+    height: 40px;
+    width: 220px;
+}
+
+#b-loja:hover {
+    background-color: transparent;
+    transition-duration: 0.5s;
+}
+
+#b-loja > p:hover {
+    color: var(--red);
+    transition-duration: 0.5s;
+}
+
+#cadastro {
+    height: 250px;
+    margin-top: 150px;
+    width: 100%;
+    border-top: 2px solid var(--lightgray);
+}
+
+#cadastro > h2 {
+    font-family: 'Teko', sans-serif;
+    color: black;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+#cadastro > p {
+    font-family: 'Teko', sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+#b-cadastro {
+    height: 50px;
+    width: 280px;
+    border-radius: 50px;
+    margin: 20px auto auto auto;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.432);
+    border: 2px solid var(--red);
+}
+
+#b-cadastro > p {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
+    width: 280px;
+    height: 50px;
+    padding-top: 5px;
+}
+
+#b-cadastro:hover {
+    background-color: transparent;
+    transition-duration: 0.5s;
+}
+
+#b-cadastro > p:hover {
+    color: var(--red);
+    transition-duration: 0.5s;
+}
+
+#despedida {
+    background-image: url('images/background-machi.jpg');
+    width: 100%;
+    height: 405px;
+    margin-top: 20px;
+}
+
+#despedida > h1 {
+    color: white;
+    font-family: 'Oswald', sans-serif;;
+    font-size: 2.5em;
+    text-shadow: 4px 5px 3px rgba(0, 0, 0, 0.425);
+    text-align: center;
+    padding-top: 50px;
+}
+
+#despedida > p{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
+    text-align: center;
+    margin-top: 50px;
+}
+
+#redes {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#redes div {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin: 0px 30px;
+    border-radius: 50%;
+}
+
+#whatsapp {
+    background-image: url('images/whatsapp-icon.png');
+}
+
+#facebook {
+    background-image: url('images/facebook-icon.png');
+}
+
+#instagram {
+    background-image: url('images/instagram-icon.png');
+}
+
+#twitter {
+    background-image: url('images/twitter-icon.png');
+}
+
+.cor-botoes {
+    background-color: var(--red);
+}
