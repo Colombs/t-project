@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald&family=Teko:wght@300;400;500&display=swap');
 
 :root {
-    --red: #EE5C14;
-    --lightgray: #B2BEBF;
-    --gray: #889C9B;
-    --boldgray: #486966;
-    --boldergray: #3B3936;
+    --botoes-geral: #EE5C14;
+    --bordas: #B2BEBF;
+    --hover-nav: #486966;
+    --degrade: #486966;
+    --botoes-avali: #3B3936;
 }
 
 * {
@@ -25,6 +25,10 @@ a {
     background-position: center;
 }
 
+.cor-botoes {
+    background-color: var(--botoes-geral);
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -35,7 +39,7 @@ header {
     height: 80px;
     background-color: white; 
     z-index: 10;
-    border-bottom: 1px solid var(--lightgray);
+    border-bottom: 1px solid var(--bordas);
 }
 
 #logo-nome {
@@ -66,7 +70,7 @@ nav > a {
 }
 
 nav > a:hover {
-    color: var(--boldgray);
+    color: var(--hover-nav);
     transition-duration: 0.5s;
 }
 
@@ -115,7 +119,7 @@ main {
     height: 50px;
     border-radius: 50px; 
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.432);
-    border: 2px solid var(--red);
+    border: 2px solid var(--botoes-geral);
     margin: 80px 0px 0px 0px;
 }
 
@@ -151,9 +155,9 @@ main {
     height: 50px;
     margin: auto;
     margin-top: 20px;
-    background-color: var(--boldergray);
+    background-color: var(--botoes-avali);
     border-radius: 50px;
-    border: 2px solid var(--boldergray);
+    border: 2px solid var(--botoes-avali);
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.432);
 }
 
@@ -173,7 +177,7 @@ main {
 }
 
 #avaliacoes div > p:hover {
-    color: var(--boldergray);
+    color: var(--botoes-avali);
     font-weight: bold;
     box-shadow: none;
     transition-duration: 0.5s;
@@ -196,7 +200,7 @@ main {
     font-weight: normal;
     font-size: 1.8em;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
-    background-image: linear-gradient(to right, transparent, var(--boldgray), transparent);
+    background-image: linear-gradient(to right, transparent, var(--degrade), transparent);
 }
 
 #principais-torres {
@@ -211,7 +215,7 @@ main {
     height: 250px;
     width: 250px;
     margin: 0px 30px;
-    border: 1px solid var(--lightgray);
+    border: 1px solid var(--bordas);
     border-radius: 50px;   
 }
 
@@ -264,7 +268,7 @@ main {
     width: 130px;
     border-radius: 50px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.432);
-    border: 2px solid var(--red);
+    border: 2px solid var(--botoes-geral);
 }
 
 #botao-principais-torres > p {
@@ -283,7 +287,7 @@ main {
 }
 
 #botao-principais-torres > p:hover {
-    color: var(--red);
+    color: var(--botoes-geral);
     transition-duration: 0.5s;
 }
 
@@ -318,7 +322,7 @@ main {
     height: 100%;
     width: 100%;
     border-radius: 50px;
-    border: 1px solid var(--lightgray);
+    border: 1px solid var(--bordas);
 }
 
 .foto-loja h3 {
@@ -375,7 +379,7 @@ main {
     height: 40px;
     border-radius: 50px;
     margin: 100px auto auto auto;
-    border: 2px solid var(--red);
+    border: 2px solid var(--botoes-geral);
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.432);
 }   
 
@@ -397,7 +401,7 @@ main {
 }
 
 #botao-loja > p:hover {
-    color: var(--red);
+    color: var(--botoes-geral);
     transition-duration: 0.5s;
 }
 
@@ -405,7 +409,7 @@ main {
     height: 250px;
     margin-top: 150px;
     width: 100%;
-    border-top: 2px solid var(--lightgray);
+    border-top: 2px solid var(--bordas);
 }
 
 #cadastro > h2 {
@@ -432,7 +436,7 @@ main {
     border-radius: 50px;
     margin: 20px auto auto auto;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.432);
-    border: 2px solid var(--red);
+    border: 2px solid var(--botoes-geral);
 }
 
 #botao-cadastro > p {
@@ -452,7 +456,7 @@ main {
 }
 
 #botao-cadastro > p:hover {
-    color: var(--red);
+    color: var(--botoes-geral);
     transition-duration: 0.5s;
 }
 
@@ -512,6 +516,3 @@ main {
     background-image: url('images/twitter-icon.png');
 }
 
-.cor-botoes {
-    background-color: var(--red);
-}
