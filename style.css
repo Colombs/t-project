@@ -43,15 +43,12 @@ header {
     align-items: center;
 }
 
-header > h1 {
+header h1 {
     font-family: 'Abril Fatface', cursive; 
     font-weight: normal;  
     font-size: 2.8em;
-}
-
-header a {
-    text-decoration: none;
     color: black;
+    margin-left: 10px;
 }
 
 nav {
@@ -89,25 +86,28 @@ main {
 }
 
 #conteudo-entrada {
-    width: 1230px;
-    position: absolute;
-    top: 250px;
-    left: 80px;
+    width: 1000px;
+    padding-top: 150px;
+    padding-left: 150px;
+    display: flex;
+    flex-direction: column;
 }
 
 #conteudo-entrada > h1 {
     color: white;
     font-family: 'Oswald', sans-serif;;
-    font-size: 5.5em;
+    font-size: 4.5em;
     text-shadow: 4px 5px 3px rgba(0, 0, 0, 0.425);
+    font-weight: normal;
 }
 
 #conteudo-entrada > p {
     color: white;
     font-family: 'Oswald', sans-serif;
-    font-size: 3em;
+    font-size: 2.8em;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
     margin-top: 30px;
+    font-weight: normal;
 }
 
 #botao-entrada {
@@ -116,7 +116,7 @@ main {
     border-radius: 50px; 
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.432);
     border: 2px solid var(--red);
-    margin: 80px auto auto auto;
+    margin: 80px 0px 0px 0px;
 }
 
 #botao-entrada > p {
