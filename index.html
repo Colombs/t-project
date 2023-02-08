@@ -11,8 +11,12 @@
 <body>
 
     <header>     
-        <img src="images/tt-icon.jpg" alt="Logo TT">
-        <h1>Tower Trip</h1>
+        <a href="#">
+            <div id="logo-nome">
+                <img src="images/tt-icon.jpg" alt="Logo">
+                <h1>Tower Trip</h1>
+            </div>
+        </a>
         <nav>
             <a href="#">Destino Único</a>
             <a href="#">Pacotes</a>
@@ -23,46 +27,46 @@
     </header>
 
     <main>
-        <section id="img-main">
-            <img id="tokyo-sky" src="images/tokyo-skytree.jpg" alt="Tokyo SkyTree">
-            <div id="text-img-tit">IMPONENTES E BELAS</div>
-            <div id="text-img-p">Torres monumentais ao redor do mundo são continuamente admiradas por tamanha luxuosidade e grandeza. Conheça as maravilhas da engenharia!</div>
-            <a href="#">
-                <div id="b-destinos" class="cor-botoes"><p>Destinos</p></div>
-            </a>
+        <section id="entrada" class="fundo">
+            <div id="conteudo-entrada">
+                <h1>IMPONENTES E BELAS</h1>
+                <p>Torres monumentais ao redor do mundo são continuamente admiradas por tamanha luxuosidade e grandeza. Conheça as maravilhas da engenharia!</p>
+                <a href="#">
+                    <div id="botao-entrada" class="cor-botoes"><p>Destinos</p></div>
+                </a>
+            </div>
         </section>
 
-        <section id="rating">
+        <section id="avaliacoes">
             <h2>Confira as avaliações dos nossos clientes.</h2>
             <a href="#">
                 <div><p>Avaliações</p></div>
             </a>
         </section>
 
-        <section id="princip-torres">
+        <section id="div-torres" class="fundo">
             <h2>CONSTRUÇÕES MAIS VISITADAS</h2>
-            <div id="main-places">
-
+            <div id="principais-torres"> 
                 <a href="#">
-                    <div id="big-ben">
+                    <div id="big-ben" class="fundo">
                         <p>Torre Big Ben <br>(Inglaterra)</p>
                     </div>
                 </a>
 
                 <a href="#">
-                    <div id="brugues">
+                    <div id="brugues" class="fundo">
                         <p>Campanário de Brugues <br>(Bélgica)</p>
                     </div>
                 </a>
 
                 <a href="#">
-                    <div id="skytree">
+                    <div id="skytree" class="fundo">
                         <p>Tokyo SkyTree <br>(Japão)</p>
                     </div>
                 </a>
         
                 <a href="#">
-                    <div id="pisa">
+                    <div id="pisa" class="fundo">
                         <p>Torre de Pisa <br>(Itália)</p>
                     </div>
                 </a>
@@ -72,78 +76,76 @@
                         <p>Qutb Minar <br>(Índia)</p>
                     </div>
                 </a>
-
             </div>
             <a href="#">
-                <div id="b-ver-todas" class="cor-botoes"><p>Ver Todas</p></div>
+                <div id="botao-principais-torres" class="cor-botoes"><p>Ver Todas</p></div>
             </a>
         </section>
 
         <section id="loja">
-            <div>
-                <h2>Loja</h2>
+            <h2>Loja</h2>
+
+            <div id="loja-link">
+                <a href="#">
+                    <div class="foto-loja">
+                        <div id="foto-roupa" class="fundo"></div>
+                        <h3>Roupas</h3>
+                    </div>
+                </a>
+                
+                <a href="#">
+                    <div class="foto-loja">
+                        <div id="foto-chaveiro" class="fundo"></div>
+                        <h3>Acessórios</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="foto-loja">
+                       <div id="foto-adesivo" class="fundo"></div>
+                        <h3>Adesivos</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="foto-loja">
+                        <div id="foto-bebida" class="fundo"></div>
+                        <h3>Bebidas</h3>
+                     </div>
+                </a>
             </div>
 
-            <a href="#">
-                <div class="fotos-loja">
-                    <div id="f-roupas"></div>
-                    <h3>Roupas</h3>
-                </div>
-            </a>
+                <a href="#">
+                    <div id="botao-loja" class="cor-botoes">
+                        <p>Explorar</p>
+                    </div>
+                </a>
             
-            <a href="#">
-                <div class="fotos-loja">
-                    <div id="f-chaveiros"></div>
-                    <h3>Acessórios</h3>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="fotos-loja">
-                   <div id="f-adesivos"></div>
-                    <h3>Adesivos</h3>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="fotos-loja">
-                    <div id="f-bebidas"></div>
-                    <h3>Bebidas</h3>
-                 </div>
-            </a>
-
-            <a href="#">
-                <div id="b-loja" class="cor-botoes">
-                    <p>Explorar</p>
-                </div>
-            </a>
         </section>
 
         <section id="cadastro">
             <h2>Cadastre-se agora</h2>
             <p>Fique sabendo dos melhores descontos e tire dúvidas com nossos atendentes via e-mail.</p>
             <a href="#">
-                <div id="b-cadastro" class="cor-botoes">
+                <div id="botao-cadastro" class="cor-botoes">
                     <p>Cadastrar-se</p>
                 </div>
             </a>
         </section>
 
-        <section id="despedida">
+        <section id="despedida" class="fundo">
             <h1>AOS PÉS DA TORRE EIFFEL, MAIS UMA NOITE LINDA CAI NO CENTRO DO UNIVERSO.</h1>
             <p>Contrate nosso serviço e embarque em uma jornada às alturas!</p>
             <div id="redes">
-                <a href="">
-                    <div id="whatsapp"></div>
+                <a href="#">
+                    <div id="whatsapp" class="fundo"></div>
                 </a>
                 <a href="#">
-                    <div id="facebook"></div>
+                    <div id="facebook" class="fundo"></div>
                 </a>
                 <a href="#">
-                    <div id="instagram"></div>
+                    <div id="instagram" class="fundo"></div>
                 </a>
                 <a href="#">
-                    <div id="twitter"></div>
+                    <div id="twitter" class="fundo"></div>
                 </a>
             </div>
         </section>
