@@ -96,7 +96,7 @@ nav > a:hover {
 
 @media (max-width: 549px) {
     nav > a {
-        font-size: 15px;
+        font-size: 8px;
     }
 }
 
@@ -172,7 +172,8 @@ main {
 @media (max-width: 857px) {
 
     #conteudo-entrada {
-        width: 400px;
+        width: 375px;
+        padding-top: 80px;
     }
 
     #conteudo-entrada > p {
