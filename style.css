@@ -58,7 +58,8 @@ header h1 {
 nav {
     display: flex;
     gap: 35px;
-    margin-right: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
     align-items: center;
 }
 
@@ -77,6 +78,26 @@ nav > a:hover {
 #perfil {
     height: 30px;
     width: 30px;
+}
+
+@media (max-width: 940px) {
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    #logo-nome {
+        height: 40px;
+    }
+}
+
+@media (max-width: 549px) {
+    nav > a {
+        font-size: 15px;
+    }
 }
 
 main {
@@ -285,6 +306,12 @@ main {
     }
 }
 
+@media (max-width: 1126px) {
+    #principais-torres div {
+        margin: 0px 40px;
+    }
+}
+
 #principais-torres p {
     font-family: 'Teko', sans-serif;
     color: white;
@@ -306,8 +333,27 @@ main {
    }
 }
 
+@media (max-width: 862px) {
+    #principais-torres div {
+        margin: 0px 10px;
+        width: 120px;
+        border-radius: 40px;
+    }
+
+    #principais-torres p {
+        width: 120px;
+        font-size: 0.96em;
+    }
+}
+
 #big-ben {
     background-image: url('images/big-ben.jpg');
+}
+
+@media (max-width: 1126px) {
+    #big-ben {
+        display: none;
+    }
 }
 
 #brugues {
@@ -324,6 +370,12 @@ main {
 
 #minar {
     background-image: url('images/qutb-minar.jpg');
+}
+
+@media (max-width: 1126px) {
+    #minar {
+        display: none;
+    }
 }
 
 #principais-torres div:hover {
@@ -384,6 +436,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .foto-loja {
@@ -393,14 +446,41 @@ main {
 
 }
 
+.loja-div-pai {
+    display: flex;
+    flex-direction: row;
+}
+
 @media (max-width: 1580px) {
+
+    #loja {
+        height: 400px;
+    }
+
     .foto-loja {
         width: 250px;
         height: 300px;
         margin: 0px 10px;
     }
+    
 }
 
+@media (max-width: 1096px) {
+
+    #loja {
+        height: 800px;
+    }
+
+    .foto-loja {
+        margin: 30px 10px;
+    }
+}
+
+@media (max-width: 556px) {
+    .foto-loja {
+        width: 200px;
+    }
+}
 
 .foto-loja  div {
     height: 100%;
@@ -467,6 +547,12 @@ main {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.432);
 }   
 
+@media (max-width: 1096px) {
+    #botao-loja {
+        margin: 50px auto auto auto;
+    }
+}
+
 #botao-loja > p {
     text-align: center;
     font-size: 1.1em;
@@ -511,7 +597,7 @@ main {
     text-align: center;
     font-size: 1.7em;
     font-weight: 100;
-    margin-top: 20px;
+    margin: 10px 5px 0px 5px;
 }
 
 #botao-cadastro {
@@ -567,6 +653,31 @@ main {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
     text-align: center;
     margin-top: 50px;
+}
+
+@media (max-width: 1240px) {
+    #despedida > h1 {
+        font-size: 2em;
+    }
+    
+    #despedida > p {
+        font-size: 1.5em;
+    }
+
+}
+
+@media (max-width: 848px) {
+    #despedida > h1 {
+        font-size: 1.5em;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    #despedida > p {
+        font-size: 1em;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
 }
 
 #redes {
