@@ -89,6 +89,19 @@ main {
     width: 100%;
 }
 
+@media (max-width: 1105px) {
+    #entrada {
+        background-image: url('images/tokyo-skytree1105pxw.jpg');
+        height: 700px;
+    }
+}
+
+@media (max-width: 500px) {
+    #entrada {
+        background-image: url('images/tokyo-skytree700pxw.jpg');
+    }
+}
+
 #conteudo-entrada {
     width: 1000px;
     padding-top: 150px;
@@ -117,10 +130,38 @@ main {
 @media (max-width: 1460px) {
     #conteudo-entrada {
         padding-left: 50px;
-        height: 500px;
     }
 }
 
+@media (max-width: 1246px) {
+    #conteudo-entrada {
+        padding-left: 20px;
+        width: 800px;
+    }
+
+    #conteudo-entrada > p {
+        font-size: 2.3em;
+    }
+
+    #conteudo-entrada > h1 {
+        font-size: 3.8em;
+    }
+}
+
+@media (max-width: 857px) {
+
+    #conteudo-entrada {
+        width: 400px;
+    }
+
+    #conteudo-entrada > p {
+        font-size: 1.8em;
+    }
+
+    #conteudo-entrada > h1 {
+        font-size: 3em;
+    }
+}
 
 #botao-entrada {
     width: 240px;
@@ -242,12 +283,6 @@ main {
         width: 200px;
         margin: 0px 10px;
     }
-
-   #principais-torres p {
-        width: 200px;
-        height: 200px;
-   }
-
 }
 
 #principais-torres p {
@@ -260,6 +295,15 @@ main {
     height: 250px;
     opacity: 0;
     text-align: center;
+}
+
+@media (max-width: 1580px) {
+
+    #principais-torres p {
+        width: 200px;
+        height: 200px;
+        font-size: 1.6em;
+   }
 }
 
 #big-ben {
@@ -349,7 +393,7 @@ main {
 
 }
 
-@media (max-width: 1460px) {
+@media (max-width: 1580px) {
     .foto-loja {
         width: 250px;
         height: 300px;
